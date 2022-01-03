@@ -8,7 +8,7 @@ const NavBar = () => {
         <>
             <Navbar sticky="top" className="navBar navBg" expand="lg">
             <Container fluid>
-            <Navbar.Brand> Shuvro Baset </Navbar.Brand>
+            <Navbar.Brand className="text-white"> Shuvro Baset </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className="bg-light" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mx-auto">
