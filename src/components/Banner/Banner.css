@@ -1,0 +1,10 @@
+.banner-div{
+    background-image: linear-gradient(rgba(0, 41, 75, 0.51), rgba(0, 41, 75, 0.51)), 
+                        url('https://media.istockphoto.com/photos/cyber-security-web-development-and-work-in-it-concept-picture-id1289411982?b=1&k=20&m=1289411982&s=170667a&w=0&h=0R3OXR4L6LOGphYA3sul4bWQwpGj_DSl05ENiP2kRZg=');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    color: #fff;
+}
