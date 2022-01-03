@@ -1,0 +1,10 @@
+.tech-button{
+    background: #000000;
+    color: #ffffff;
+    padding: 3px 8px;
+}
+.tech-button:hover{
+    background: #000000;
+    color: #e12454;
+    padding: 3px 8px;
+}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import Post from '../../components/Post/Post';
