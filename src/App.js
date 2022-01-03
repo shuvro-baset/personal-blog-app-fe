@@ -8,6 +8,7 @@ import AllPosts from './pages/AllPosts/AllPosts';
 import { useDispatch } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { getPosts } from './actions/posts';
+import NavBar from './components/NavBar/NavBar';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
   return (
     <>
       <Router>
+        <NavBar />
         <Switch>
           <Route exact path="/">
             <Home></Home>
@@ -30,10 +32,10 @@ function App() {
             <Home></Home>
           </Route>
           
-          <Route  path="/add-posts">
+          <Route  path="/add-blog">
             <AddPosts currentId={currentId}></AddPosts>
           </Route>
-          <Route  path="/all-posts">
+          <Route  path="/all-blogs">
             <AllPosts setCurrentId={setCurrentId}></AllPosts>
           </Route>
           

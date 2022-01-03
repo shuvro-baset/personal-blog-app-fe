@@ -11,7 +11,6 @@ const Post = ({ post, setCurrentId }) => {
         <Col md={4}>
             <div>
                 <h2>  {post.title} </h2>
-                <h2>  {post.creator} </h2>
                 <p> {post.message} </p>
                 <p> {moment(post.createdAt).fromNow()} </p>
             </div>

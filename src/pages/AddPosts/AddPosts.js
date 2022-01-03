@@ -40,20 +40,16 @@ const AddPosts = ({ currentId, setCurrentId }) => {
                     <h3> { currentId ? "Editing" : "Add"  } post </h3>
                     <form onSubmit={handleSubmit}>
                         <div className="mb-3">
-                            <label className="form-label">Name</label>
-                            <input name="creator" type="text" value={postData.creator} onChange={(e) => setPostData({ ...postData, creator: e.target.value })} className="form-control"  placeholder="Name" />
+                            <label className="form-label">Title</label>
+                            <input name="title" type="text" value={postData.title} onChange={(e) => setPostData({ ...postData, title: e.target.value })} className="form-control"  placeholder="Title" required />
                         </div>
                         <div className="mb-3">
-                            <label className="form-label">Name</label>
-                            <input name="title" type="text" value={postData.title} onChange={(e) => setPostData({ ...postData, title: e.target.value })} className="form-control"  placeholder="Title" />
+                            <label className="form-label">Message</label>
+                            <textarea name="message" type="text" value={postData.message} onChange={(e) => setPostData({ ...postData, message: e.target.value })} className="form-control"  placeholder="Message" required />
                         </div>
                         <div className="mb-3">
-                            <label className="form-label">Name</label>
-                            <textarea name="message" type="text" value={postData.message} onChange={(e) => setPostData({ ...postData, message: e.target.value })} className="form-control"  placeholder="Message" />
-                        </div>
-                        <div className="mb-3">
-                            <label className="form-label">Name</label>
-                            <input name="tags" type="text" value={postData.tags} onChange={(e) => setPostData({ ...postData, tags: e.target.value.split(',') })} className="form-control"  placeholder="Tags" />
+                            <label className="form-label">Tag</label>
+                            <input name="tags" type="text" value={postData.tags} onChange={(e) => setPostData({ ...postData, tags: e.target.value.split(',') })} className="form-control"  placeholder="Tags" required />
                         </div>
                         <div className="mb-3">
                             <FileBase type="file" className="form-control"  onDone={({ base64 }) => setPostData({ ...postData, selectedFile: base64 })} />
