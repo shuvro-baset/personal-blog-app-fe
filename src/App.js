@@ -11,6 +11,7 @@ import { getPosts } from './actions/posts';
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
 import About from './pages/About/About';
+import NotFound from './pages/NotFound/NotFound';
 
 
 function App() {
@@ -42,6 +43,9 @@ function App() {
           </Route>
           <Route  path="/all-blogs">
             <AllPosts setCurrentId={setCurrentId}></AllPosts>
+          </Route>
+          <Route  path="*">
+            <NotFound />
           </Route>
           
         </Switch>
