@@ -15,10 +15,10 @@ import NotFound from './pages/NotFound/NotFound';
 
 
 function App() {
+  // set state for blog id
   const [currentId, setCurrentId] = useState(0);
 
   const dispatch = useDispatch();
-
   useEffect(() => {
     dispatch(getPosts());
   }, [currentId, dispatch]);

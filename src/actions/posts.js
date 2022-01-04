@@ -2,6 +2,8 @@ import { FETCH_ALL, CREATE, UPDATE, DELETE, LIKE } from '../constants/actionType
 
 import * as api from '../api/index.js';
 
+// make functions for every action 
+// getPosts action
 export const getPosts = () => async (dispatch) => {
   try {
     const { data } = await api.fetchPosts();
@@ -12,6 +14,7 @@ export const getPosts = () => async (dispatch) => {
   }
 };
 
+// Create Posts 
 export const createPost = (post) => async (dispatch) => {
   try {
     const { data } = await api.createPost(post);
@@ -22,6 +25,7 @@ export const createPost = (post) => async (dispatch) => {
   }
 };
 
+// update Posts
 export const updatePost = (id, post) => async (dispatch) => {
   try {
     const { data } = await api.updatePost(id, post);
@@ -32,6 +36,7 @@ export const updatePost = (id, post) => async (dispatch) => {
   }
 };
 
+// post like
 export const likePost = (id) => async (dispatch) => {
   try {
     const { data } = await api.likePost(id);
@@ -42,6 +47,7 @@ export const likePost = (id) => async (dispatch) => {
   }
 };
 
+// delete 
 export const deletePost = (id) => async (dispatch) => {
   try {
     await api.deletePost(id);

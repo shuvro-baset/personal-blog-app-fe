@@ -6,14 +6,13 @@ import { Link } from 'react-router-dom';
 
 const LatestBlogs = () => {
     const posts = useSelector((state) => state.posts);
-    console.log(posts);
 
     return (
         <Container>
                 <h2 className="title-1">Latest Blogs</h2>
 
             <Row className="my-5">
-
+                {/* showing latest Blogs */}
                 {
                     posts.slice(0,3).map(post => 
                         <Col md={4} key={post._id} data-aos="zoom-in">

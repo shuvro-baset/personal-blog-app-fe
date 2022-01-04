@@ -7,11 +7,12 @@ import { createPost, updatePost } from '../../actions/posts';
 import './AddPosts.css';
 
 const AddPosts = ({ currentId, setCurrentId }) => {
-    
+    // set state for blog post data
     const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
     const post = useSelector((state) => (currentId ? state.posts.find((message) => message._id === currentId) : null));
     const dispatch = useDispatch();
   
+    // getting post data
     useEffect(() => {
       if (post) setPostData(post);
     }, [post]);
@@ -21,6 +22,7 @@ const AddPosts = ({ currentId, setCurrentId }) => {
       setPostData({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
     };
   
+    // handling submit data 
     const handleSubmit = async (e) => {
       e.preventDefault();
   

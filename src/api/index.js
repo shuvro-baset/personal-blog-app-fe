@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+// api url from heroku
 const url = 'https://afternoon-plains-17280.herokuapp.com/posts';
 
 export const fetchPosts = () => axios.get(url);

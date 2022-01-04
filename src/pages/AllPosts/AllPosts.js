@@ -4,9 +4,8 @@ import { useSelector } from 'react-redux';
 import Post from '../../components/Post/Post';
 
 const AllPosts = ({ setCurrentId }) => {
+    // getting data
     const posts = useSelector((state) => state.posts);
-
-    console.log(posts.length);
     return (
         <Container>
             <h1 className="text-center pt-3 title-1">My Blogs....</h1>

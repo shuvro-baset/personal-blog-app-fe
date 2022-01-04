@@ -6,8 +6,11 @@ import moment from 'moment';
 import { deletePost, likePost } from '../../actions/posts';
 
 const Post = ({ post, setCurrentId }) => {
+    // dispatch data
     const dispatch = useDispatch();
     return (
+
+        // showing dynamic blog data 
         <Col md={6} className="py-4" data-aos="flip-up">
             <div>
                 <img style={{'height': '300px'}} className="img-fluid my-2 rounded w-100" src={post.selectedFile} alt="" />
