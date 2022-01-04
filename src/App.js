@@ -10,6 +10,7 @@ import { useEffect, useState } from 'react';
 import { getPosts } from './actions/posts';
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
+import About from './pages/About/About';
 
 
 function App() {
@@ -31,6 +32,9 @@ function App() {
           </Route>
           <Route  path="/home">
             <Home></Home>
+          </Route>
+          <Route  path="/about">
+            <About />
           </Route>
           
           <Route  path="/add-blog">

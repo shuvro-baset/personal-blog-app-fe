@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.title-1{
+  color: #e12454;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.title-2{
+  color: #e12454;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  font-size: 20px;
+}
+.desc{
+  font-family: 'Comic Neue', cursive;
+  font-weight: 600;
+}

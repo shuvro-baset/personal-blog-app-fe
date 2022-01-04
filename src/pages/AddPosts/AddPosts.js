@@ -37,7 +37,7 @@ const AddPosts = ({ currentId, setCurrentId }) => {
         <Container>
            <Row className="my-5 d-flex justify-content-center">
                 <Col md={8}>
-                    <h3 className="text-center"> { currentId ? "Editing" : "Add"  } Blog </h3>
+                    <h3 className="text-center title-1"> { currentId ? "Editing" : "Add"  } Blog </h3>
                     <form onSubmit={handleSubmit} className="form-div">
                         <div className="mb-3">
                             <label className="form-label">Title</label>
@@ -54,8 +54,7 @@ const AddPosts = ({ currentId, setCurrentId }) => {
                         <div className="mb-3">
                             <FileBase type="file" className="form-control"  onDone={({ base64 }) => setPostData({ ...postData, selectedFile: base64 })} />
                         </div>
-                        <button type="submit" className="btn">Submit</button>
-                        <button className="btn" onClick={clear}> clear</button>
+                        <button type="submit" className="btn tech-button">Submit</button>
                     </form>
                 </Col>
            </Row>

@@ -10,7 +10,7 @@ import analytics from '../../images/web-analytics.png';
 const Tech = () => {
     return (
         <Container>
-            <h1> I love New Technologies, Programming, Coding.</h1>
+            <h1 className="title-2"> I love New Technologies, Programming, Coding.</h1>
             <Row className="my-5">
                 <Col md={4}>
                     <img className="img-fluid  rounded" src="https://images.unsplash.com/photo-1575089976121-8ed7b2a54265?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGV2ZWxvcGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" />

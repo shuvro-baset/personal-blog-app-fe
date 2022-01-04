@@ -9,7 +9,7 @@ const AllPosts = ({ setCurrentId }) => {
     console.log(posts.length);
     return (
         <Container>
-            <h1 className="text-center pt-3">My Blogs....</h1>
+            <h1 className="text-center pt-3 title-1">My Blogs....</h1>
             <Row className="py-5">
                 {
                     posts.map(post => <Post

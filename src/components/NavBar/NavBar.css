@@ -1,15 +1,26 @@
-.menu-item{
-    text-decoration: none;
-    color: #ffffff;
-    padding: 6px 10px;
-    margin: 10px;
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-}
-.menu-item:hover{
-    color: #e12454;
-}
+
 
 .navBg{
     background-color: #00294b;
+}
+
+.nav-item{
+    width: 120px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #e12454;
+    box-shadow: inset 0 0 0 0 #e12454;
+    padding: 6px 10px;
+    margin: 10px;
+    border-radius: 3px;
+    transition: ease-out 0.5s;
+    text-align: center;
+    font-family: 'Comic Neue', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: none;
+}
+.nav-item:hover{
+    box-shadow: inset 120px 0 0 0 #fff;
+    color: black;
 }

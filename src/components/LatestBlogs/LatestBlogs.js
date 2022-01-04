@@ -10,7 +10,7 @@ const LatestBlogs = () => {
 
     return (
         <Container>
-                <h2>Latest Blogs</h2>
+                <h2 className="title-1">Latest Blogs</h2>
 
             <Row className="my-5">
 
@@ -26,11 +26,11 @@ const LatestBlogs = () => {
                                     <i className="mx-2 fas fa-thumbs-up"> {post.likeCount} </i>
                                 </div>
                                 <div className="p-4 text-center">
-                                    <h6> {post.title}</h6>
-                                    <p>{post.message.slice(0,100)}</p>
+                                    <h6 className="title-2"> {post.title}</h6>
+                                    <p className="desc">{post.message.slice(0,100)}</p>
                                 </div>
                                 <div className="pb-2">
-                                    <Link to='/all-blogs'><button className="btn tech-button">See More</button></Link>
+                                    <Link to='/all-blogs'><button className="mx-4 btn tech-button">See More</button></Link>
                                 </div>
                             </div>
                         </Col>
