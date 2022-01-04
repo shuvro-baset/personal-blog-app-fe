@@ -4,7 +4,7 @@ import {  Col, Container,  Row } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import FileBase from 'react-file-base64';
 import { createPost, updatePost } from '../../actions/posts';
-
+import './AddPosts.css';
 
 const AddPosts = ({ currentId, setCurrentId }) => {
     
@@ -35,10 +35,10 @@ const AddPosts = ({ currentId, setCurrentId }) => {
 
     return (
         <Container>
-           <Row>
+           <Row className="my-5 d-flex justify-content-center">
                 <Col md={8}>
-                    <h3> { currentId ? "Editing" : "Add"  } post </h3>
-                    <form onSubmit={handleSubmit}>
+                    <h3 className="text-center"> { currentId ? "Editing" : "Add"  } Blog </h3>
+                    <form onSubmit={handleSubmit} className="form-div">
                         <div className="mb-3">
                             <label className="form-label">Title</label>
                             <input name="title" type="text" value={postData.title} onChange={(e) => setPostData({ ...postData, title: e.target.value })} className="form-control"  placeholder="Title" required />
