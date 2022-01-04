@@ -26,22 +26,34 @@ const Tech = () => {
                 </Col>
             </Row>
             <Row className="my-5">
-                <Col md={2}>
+                <Col md={2} data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <img className="img-fluid my-2 rounded" src={web} alt="" />
                 </Col>
-                <Col md={2}>
+                <Col md={2} data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <img className="img-fluid my-2 rounded" src={app} alt="" />
                 </Col>
-                <Col md={2}>
+                <Col md={2} data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
                     <img className="img-fluid my-2 rounded" src={programmer} alt="" />
                 </Col>
-                <Col md={2}>
+                <Col md={2} data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
                     <img className="img-fluid my-2 rounded" src={mobile} alt="" />
                 </Col>
-                <Col md={2}>
+                <Col md={2} data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <img className="img-fluid my-2 rounded" src={dev} alt="" />
                 </Col>
-                <Col md={2}>
+                <Col md={2} data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <img className="img-fluid my-2 rounded" src={analytics} alt="" />
                 </Col>
             </Row>

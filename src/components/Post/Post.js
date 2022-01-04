@@ -8,7 +8,7 @@ import { deletePost, likePost } from '../../actions/posts';
 const Post = ({ post, setCurrentId }) => {
     const dispatch = useDispatch();
     return (
-        <Col md={6} className="py-4">
+        <Col md={6} className="py-4" data-aos="flip-up">
             <div>
                 <img style={{'height': '300px'}} className="img-fluid my-2 rounded w-100" src={post.selectedFile} alt="" />
             </div>

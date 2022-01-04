@@ -16,7 +16,7 @@ const LatestBlogs = () => {
 
                 {
                     posts.slice(0,3).map(post => 
-                        <Col md={4} key={post._id} >
+                        <Col md={4} key={post._id} data-aos="zoom-in">
                             <div className="shadow rounded">
                                 <div>
                                     <img style={{'height': '200px'}} className="img-fluid w-100 rounded" src={post.selectedFile} alt="" />
