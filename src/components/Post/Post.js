@@ -12,7 +12,7 @@ const Post = ({ post, setCurrentId }) => {
             <div>
                 <h2>  {post.title} </h2>
                 <p> {post.message} </p>
-                <p> {moment(post.createdAt).fromNow()} </p>
+                <p> <i class="fas fa-history"></i> {moment(post.createdAt).fromNow()} </p>
             </div>
             <div>
                 <button onClick={() => dispatch(likePost(post._id))}><i className="fas fa-thumbs-up"> {post.likeCount} </i></button>

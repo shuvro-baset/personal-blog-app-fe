@@ -57,7 +57,7 @@ const Footer = () => {
                         <input className="contact-info" type="email" placeholder="Email" /> <br />
                         <textarea className="contact-info" rows="3" cols="22" type="text" placeholder="Enter your message" />
                         <br />
-                        <button className='btn btn-order'>Send</button>
+                        <button className='btn btn-primary'>Send</button>
                     </div>
                 </Col>
             </Row>

@@ -1,3 +1,4 @@
+import moment from 'moment';
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
@@ -20,12 +21,15 @@ const LatestBlogs = () => {
                                 <div>
                                     <img style={{'height': '200px'}} className="img-fluid w-100 rounded" src={post.selectedFile} alt="" />
                                 </div>
+                                <div className="pt-2 d-flex justify-content-between">
+                                    <small className="ms-2"><i className="fas fa-history"></i> {moment(post.createdAt).fromNow()}</small>
+                                    <i className="mx-2 fas fa-thumbs-up"> {post.likeCount} </i>
+                                </div>
                                 <div className="p-4 text-center">
                                     <h6> {post.title}</h6>
                                     <p>{post.message.slice(0,100)}</p>
                                 </div>
-                                <div className="pb-2 d-flex justify-content-around">
-                                    <i className="fas fa-thumbs-up"> {post.likeCount} </i>
+                                <div className="pb-2">
                                     <Link to='/all-blogs'><button className="btn tech-button">See More</button></Link>
                                 </div>
                             </div>
