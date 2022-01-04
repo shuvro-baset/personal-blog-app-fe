@@ -9,7 +9,8 @@ const AllPosts = ({ setCurrentId }) => {
     console.log(posts.length);
     return (
         <Container>
-            <Row>
+            <h1 className="text-center pt-3">My Blogs....</h1>
+            <Row className="py-5">
                 {
                     posts.map(post => <Post
                         key={post._id}

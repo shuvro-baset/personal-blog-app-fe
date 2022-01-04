@@ -9,6 +9,7 @@ const Banner = () => {
         <Container fluid>
             <Row className="banner-div d-flex justify-content-center">
                 <Col md={6} className="d-flex flex-column justify-content-center align-items-center">
+                    <h1>Welcome to My Tech Blog</h1>
                     <h2>Hi! I am <span style={{ color: '#e12454', fontWeight: 'bold' }}>
                         {/* Style will be inherited from the parent element */}
                         <Typewriter
