@@ -12,6 +12,11 @@ import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
 import About from './pages/About/About';
 import NotFound from './pages/NotFound/NotFound';
+import AuthProvider from './context/AuthProvider';
+import Login from './pages/Login/Login';
+import Register from './pages/Register/Register';
+import DashBoard from './pages/DashBoard/DashBoard';
+import PrivateRoute from './pages/Login/PrivateRoute/PrivateRoute';
 
 
 function App() {
@@ -25,6 +30,7 @@ function App() {
 
   return (
     <>
+      <AuthProvider>
       <Router>
         <NavBar />
         <Switch>
@@ -37,12 +43,20 @@ function App() {
           <Route  path="/about">
             <About />
           </Route>
-          
           <Route  path="/add-blog">
             <AddPosts currentId={currentId}></AddPosts>
           </Route>
           <Route  path="/all-blogs">
             <AllPosts setCurrentId={setCurrentId}></AllPosts>
+          </Route>
+          <Route path="/dashboard">
+            <DashBoard setCurrentId={setCurrentId} />
+          </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <Route path="/register">
+            <Register></Register>
           </Route>
           <Route  path="*">
             <NotFound />
@@ -51,6 +65,7 @@ function App() {
         </Switch>
         <Footer />
       </Router>
+      </AuthProvider>
     </>
   );
 }
