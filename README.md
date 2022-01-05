@@ -18,3 +18,5 @@
     - user should login to comment blog post
     - review system 
     - rating system will be updated.
+
+admin 123456
